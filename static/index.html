@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Phishing Detection Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main-container">
+    <div class="header">
+      <h1>Phishing or Not?</h1>
+      <p class="subtitle">Let AI check if that website is safe or a scam!</p>
+    </div>
+
+    <div class="input-section">
+      <input type="text" id="urlInput" placeholder="https://example.com/login" />
+      <button id="checkButton" type="button">Check URL</button>
+    </div>
+
+    <div id="loading" class="loading" style="display:none">Checking…</div>
+
+    <!-- Minimal result: only shows verdict -->
+    <div id="resultArea" class="result-area" style="display:none">
+  <p id="resultText">—</p>
+  <div id="reasonText" style="margin-top:10px;font-size:0.95rem;color:#333"></div>
+</div>
+
+
+    <div id="errorArea" class="error" style="display:none" role="alert"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
